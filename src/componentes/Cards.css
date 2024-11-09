@@ -1,0 +1,81 @@
+
+.card {
+  width: 450px;
+  background-color: #1a1f1a; /* Fondo oscuro con un toque verde */
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s; /* Incluye transiciones para todos los efectos */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 255, 0, 0.5); /* Sombreado verde */
+  background-color: #0f3313; /* Fondo que palpita a un verde oscuro */
+  img{
+    filter: brightness(100%); /* Aplica filtro de brillo para que la imagen sea más oscura */
+    /*hacer que tenga sombreado verde briillante*/
+    transition: filter 0.5s; /* Incluye transición para el filtro de brillo */
+    filter: brightness(120%); /* Aplica filtro de brillo para que la imagen sea más oscura */
+    transition: filter 0.5s; /* Incluye transición para el filtro de brillo */
+    box-shadow: 0 8px 16px rgba(0, 255, 0, 0.5); /* Sombreado verde */
+    background-color: #0f3313; /* Fondo que palpita a un verde oscuro */
+    transition: filter 0.5s; /* Incluye transición para el filtro de brillo */
+    filter: brightness(120%); /* Aplica filtro de brillo para que la imagen sea más oscura */
+    transition: filter 0.5s; /* Incluye transición para el filtro de brillo */
+  
+  }
+}
+
+.content_1card {
+  width: 200px;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.content_2card {
+  margin: 15px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content_2card h2 {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.content_2card small {
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.content_2card p {
+  font-size: 0.7em;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Asegura que las tarjetas sean responsivas en pantallas pequeñas */
+    flex-direction: column;
+  }
+
+  .content_1card {
+    width: 100%;
+  }
+}
+
+img{
+  border-radius: 60px;
+  
+
+}
+
